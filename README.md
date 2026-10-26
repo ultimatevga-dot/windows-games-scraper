@@ -2,22 +2,23 @@
 
 A portable, Zero-API Python scraper for PC games (Batocera/RetroBat/EmulationStation). It downloads metadata, clear logos, covers, and high-quality YouTube gameplays automatically, without needing API keys or user accounts.
 
-## Características / Features
-* **Zero API:** No requiere claves de SteamGridDB, RAWG ni de YouTube. Totalmente anónimo.
-* **Interfaz Oscura Nativa:** Interfaz gráfica desarrollada en Tkinter con un tema oscuro y sin dependencias externas complejas.
-* **Multi-idioma:** Soporte integrado para Español, Inglés, Italiano, Francés y Portugués.
-* **Descarga de Gameplays Inteligente:** Usa `yt-dlp` para extraer resultados rápidos y `ffmpeg` para descargar, recortar a 30 segundos (con audio) y convertir a `.mp4` (H.264/AAC).
-* **Filtros Anti-Spoilers:** Descarta automáticamente tráileres de películas, vídeos de consolas (PS5, Switch) y canciones.
+## Features
+* **Zero API:** No SteamGridDB, RAWG, or YouTube API keys required. Completely anonymous.
+* **Native Dark GUI:** Graphical interface built with Tkinter featuring a dark theme and no complex external dependencies.
+* **Multi-language:** Built-in support for Spanish, English, Italian, French, and Portuguese.
+* **Smart Gameplay Download:** Uses `yt-dlp` for fast extraction and `ffmpeg` to download, trim to 30 seconds (with audio), and convert to `.mp4` (H.264/AAC).
+* **Anti-Spoiler Filters:** Automatically discards movie trailers, console videos (PS5, Switch), and music videos.
 
-## Cómo usarlo / How to use
-1. Coloca tu archivo `gamelist.xml` en la misma carpeta que el programa.
-2. Ejecuta `scraper.exe`.
-3. Selecciona tu idioma en el menú desplegable.
-4. Haz clic en **Iniciar Scraping**.
-5. El programa te irá preguntando de forma interactiva qué vídeos quieres descargar para cada juego.
+## How to use
+1. Place your `gamelist.xml` file in the same folder as the executable.
+2. Run `scraper.exe`.
+3. Select your language from the dropdown menu.
+4. Click **Start Scraping**.
+5. The program will interactively ask which videos you want to download for each game.
 
-## Compilación / Build
-Si deseas compilar el código fuente tú mismo usando PyInstaller, necesitas tener `ffmpeg.exe` y `ffprobe.exe` en la carpeta y usar el siguiente comando para incrustarlos en el binario final:
+## Build instructions
+If you wish to compile the source code yourself using PyInstaller, ensure you have `ffmpeg.exe` and `ffprobe.exe` in the same directory, then run the following command to embed them into the final binary:
+
 `pyinstaller --noconsole --onefile --add-binary "ffmpeg.exe;." --add-binary "ffprobe.exe;." scraper.py`
 
 <img width="807" height="631" alt="preview" src="https://github.com/user-attachments/assets/788bde52-4564-4e96-bae0-3896c013dd57" />
