@@ -19,3 +19,5 @@ A portable, Zero-API Python scraper for PC games (Batocera/RetroBat/EmulationSta
 ## Compilación / Build
 Si deseas compilar el código fuente tú mismo usando PyInstaller, necesitas tener `ffmpeg.exe` y `ffprobe.exe` en la carpeta y usar el siguiente comando para incrustarlos en el binario final:
 `pyinstaller --noconsole --onefile --add-binary "ffmpeg.exe;." --add-binary "ffprobe.exe;." scraper.py`
+
+<img width="807" height="631" alt="preview" src="https://github.com/user-attachments/assets/788bde52-4564-4e96-bae0-3896c013dd57" />
